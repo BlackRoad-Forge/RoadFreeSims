@@ -135,7 +135,7 @@
     <Compile Include="utils\FileUtils.cs" />
     <Compile Include="utils\HTMLPrinter.cs" />
     <Compile Include="utils\IffPrinter.cs" />
-    <Compile Include="utils\PathCaseTools.cs" />
+    <Compile Include="utils\LinqUtils.cs" />
     <Compile Include="utils\PPXDepthEngine.cs" />
     <Compile Include="utils\Promise.cs" />
     <Compile Include="utils\TextureGenerator.cs" />
