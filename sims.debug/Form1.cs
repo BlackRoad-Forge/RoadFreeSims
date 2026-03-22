@@ -55,7 +55,6 @@ namespace sims.debug
             foreach (OBJT obj in iff.List<OBJT>())
             {
                 var entries = obj.Entries;
-                label9.Text = entries.Count.ToString();
 
                 foreach (OBJTEntry entry in entries)
                     if (entry.Name != null)
@@ -427,8 +426,10 @@ namespace sims.debug
 
             var bmp = iff.Get<BMP>(512);
 
+            var fami = iff.Get<FAMI>(0);
 
-            //int rooms = simi.Rooms();
+            if (fami != null)
+                LoadFamilies(fami.ChunkLabel);
 
         }
 
@@ -497,4 +498,3 @@ namespace sims.debug
 
     }
 }
-
